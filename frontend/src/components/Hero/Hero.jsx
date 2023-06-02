@@ -1,7 +1,10 @@
 import { Container, Card, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className=' py-5'>
       <Container className='d-flex justify-content-center'>
@@ -29,4 +32,11 @@ const Hero = () => {
 };
 
 export default Hero;
- 
+
+
+
+
+
+
+
+

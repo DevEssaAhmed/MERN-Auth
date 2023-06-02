@@ -1,21 +1,20 @@
-import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import './App.css';
+import { Outlet } from 'react-router-dom';
 
 import Header from './components/Header/Header';
+ import { ToastContainer} from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
       <Header />
+      <ToastContainer />
       <Container className='my-2'>
         <Outlet />
       </Container>
     </>
   );
-}
+};
 
 export default App;
